@@ -6,6 +6,6 @@ from . import views
 #here we define all the routes
 urlpatterns = [
 
-    path('',views.all_mondays,name="all_home"),
+    path('',views.all_chai,name="all_home"),
 
 ]

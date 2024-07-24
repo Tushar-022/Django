@@ -13,7 +13,7 @@ class ChaiVariety(models.Model):
     name = models.CharField(max_length=100)
     image = models.ImageField(upload_to='tushar/')
     date_added = models.DateTimeField(default=timezone.now)
-    type = models.CharField(max_length=2, choices=CHAI_TYPE_CHOICES, default='ML')
+    type = models.CharField(max_length=2, choices=CHAI_TYPE_CHOICES)
 
     def __str__(self):
         return self.name
