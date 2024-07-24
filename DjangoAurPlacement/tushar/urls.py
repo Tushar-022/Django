@@ -7,5 +7,5 @@ from . import views
 urlpatterns = [
 
     path('',views.all_chai,name="all_home"),
-
+    path('stores/',views.store_view,name='chai_store')
 ]
