@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Chai Page by Tushar
+{% endblock %}
+
+{% block content %}
+
+{% for chai in chais %}
+    <div class="chai-item">
+        <img src="{{ chai.image.url }}" alt="{{ chai.name }}">
+        <h3>{{ chai.name }}</h3>
+        <p>Type: {{ chai.type }}</p>
+        <p>Date Added: {{ chai.date_added }}</p>
+    </div>
+{% endfor %}
+
+<h1>Radhe Radhe</h1>
+
+
+{% endblock %}
